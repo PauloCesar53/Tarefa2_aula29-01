@@ -1,0 +1,58 @@
+{
+    "version": 1,
+    "author": "Paulo César Di Lauro",
+    "editor": "wokwi",
+    "parts": [
+      { "type": "board-pi-pico-w", "id": "pico", "top": 15.95, "left": 147.55, "attrs": {} },
+      {
+        "type": "wokwi-led",
+        "id": "led1",
+        "top": 188.4,
+        "left": -82.6,
+        "attrs": { "color": "green" }
+      },
+      {
+        "type": "wokwi-led",
+        "id": "led2",
+        "top": 140.4,
+        "left": -82.6,
+        "attrs": { "color": "yellow" }
+      },
+      { "type": "wokwi-led", "id": "led3", "top": 102, "left": -82.6, "attrs": { "color": "red" } },
+      {
+        "type": "wokwi-resistor",
+        "id": "r1",
+        "top": 138.35,
+        "left": -9.6,
+        "attrs": { "value": "150" }
+      },
+      {
+        "type": "wokwi-resistor",
+        "id": "r2",
+        "top": 176.75,
+        "left": -19.2,
+        "attrs": { "value": "150" }
+      },
+      {
+        "type": "wokwi-resistor",
+        "id": "r3",
+        "top": 224.75,
+        "left": -19.2,
+        "attrs": { "value": "150" }
+      }
+    ],
+    "connections": [
+      [ "pico:GP0", "$serialMonitor:RX", "", [] ],
+      [ "pico:GP1", "$serialMonitor:TX", "", [] ],
+      [ "led3:A", "r1:1", "red", [ "v0" ] ],
+      [ "r2:1", "led2:A", "red", [ "v0" ] ],
+      [ "r3:1", "led1:A", "red", [ "v0" ] ],
+      [ "led3:C", "led2:C", "black", [ "h-47.6", "v57.6" ] ],
+      [ "led2:C", "led1:C", "black", [ "h-47.6", "v57.6" ] ],
+      [ "pico:GP11", "r1:2", "red", [ "h-19.2", "v-19.2" ] ],
+      [ "pico:GP13", "r3:2", "red", [ "h-19.2", "v48.04" ] ],
+      [ "pico:GP12", "r2:2", "red", [ "h-28.8", "v9.64" ] ],
+      [ "led3:C", "pico:GND.1", "black", [ "v0", "h-47.6", "v-115.2" ] ]
+    ],
+    "dependencies": {}
+  }
