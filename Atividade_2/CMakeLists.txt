@@ -10,12 +10,12 @@ set(PICO_BOARD pico_w CACHE STRING "Board type")
 
 
 include(pico_sdk_import.cmake)
-project(Atividade_1 C CXX ASM)
+project(Atividade_2 C CXX ASM)
 pico_sdk_init()
-add_executable(Atividade_1 Atividade_1.c )
-pico_set_program_name(Atividade_1 "Atividade_1")
-pico_enable_stdio_uart(Atividade_1 1)
-pico_enable_stdio_usb(Atividade_1 1)
-target_link_libraries(Atividade_1
+add_executable(Atividade_2 Atividade_2.c )
+pico_set_program_name(Atividade_2 "Atividade_2")
+pico_enable_stdio_uart(Atividade_2 1)
+pico_enable_stdio_usb(Atividade_2 1)
+target_link_libraries(Atividade_2
         pico_stdlib)
 pico_add_extra_outputs(Atividade_1)
