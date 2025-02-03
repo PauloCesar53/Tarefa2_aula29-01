@@ -68,7 +68,8 @@ int main()
 
   while (true)
   {
-    
+    printf("passou 1 segundo\n");
+    sleep_ms(1000);
   }
   return 0;
 }

@@ -24,21 +24,21 @@
         "id": "r1",
         "top": 138.35,
         "left": -9.6,
-        "attrs": { "value": "150" }
+        "attrs": { "value": "330" }
       },
       {
         "type": "wokwi-resistor",
         "id": "r2",
         "top": 176.75,
         "left": -19.2,
-        "attrs": { "value": "150" }
+        "attrs": { "value": "330" }
       },
       {
         "type": "wokwi-resistor",
         "id": "r3",
         "top": 224.75,
         "left": -19.2,
-        "attrs": { "value": "150" }
+        "attrs": { "value": "330" }
       }
     ],
     "connections": [
